@@ -38,3 +38,14 @@ toExe : $(nameExe)
 
 # show: 
 # 	echo $(source)
+
+exe = *.out
+# stock les exe generer
+
+clean:
+	rm -f $(OBJ)
+# supprime les .o
+
+fclean: clean
+	rm -f $(OBJ)
+	rm -f $(exe)
