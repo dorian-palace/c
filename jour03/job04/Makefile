@@ -30,7 +30,7 @@ all : $(NAME)
 nameExe = my_make_evolve
 
 $(nameExe) : $(SRC)
-	gcc -Wall $(SRC)
+	gcc -o $(nameExe) -Wall  $(SRC)
 
 toExe : $(nameExe) 
 
@@ -49,3 +49,5 @@ clean:
 fclean: clean
 	rm -f $(OBJ)
 	rm -f $(exe)
+
+#Commande man pour avoir le manuel exemple man -c pour avoir la 'doc'
